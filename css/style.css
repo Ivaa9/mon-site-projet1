@@ -1,0 +1,135 @@
+li{
+    list-style-type: none;/*on ne veut aucune puce*/
+}
+ul{
+    display: flex;/*ont définit l'element en flexbox*/
+    padding-left: 0%;
+    justify-content: space-around;
+    margin: 0%;
+}
+nav{
+   background-color: rgb(7, 7, 7); 
+}
+a{
+  display: inline-block;
+  padding: 20px 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover{/*quand pn curseur survole l'element*/
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+body{
+    margin: 0%;
+}
+header{
+    background-image: url('../images/bx.jpg');
+    height: 50vh;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+h1,header p{
+    color: rgb(255, 255, 255);
+ text-align:center;
+ font-family: cursive;
+}
+p{
+  text-align: justify;
+  font-family:Pacifico
+}
+header div{
+    padding-bottom: 20px;
+}
+ main > section{
+    padding: 50px 250px;
+    background-color: rgb(255, 255, 255)
+}
+h2,h3{
+    text-align: center;
+    font-family: cursive;
+}
+.section-paire {
+    background-color: burlywood;
+}
+img{
+    width: 40%;
+    height: auto;
+}
+#div-droite{
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+#section-div-droite{
+    display: flex;
+    flex-wrap: wrap;
+}
+#img-container img{
+    width: 25%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#img-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+input:not([type=radio]),textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+form{
+    width: 50%;
+}
+#form-container{
+    display: flex;
+    justify-content: center;
+}
+#input-container{
+    display: flex;
+    justify-content: space-between;
+}
+#input-container div{
+    width: 49%;
+}
+form > div {
+margin: 3px;
+}
+input[type=submit]{
+    background-color: rgb(250, 217, 134);
+    cursor: pointer;
+    transition: 1s;
+}
+input[type=submit]:hover{
+    background-color:rgb(211, 117, 82)
+}
+@media(max-width:1400px){
+    main > section{
+        padding: 50px 125px;
+    }
+}
+@media( max-width:1200px){
+    #img-container img{
+        width: 33.3333333333%;
+    }
+
+img{
+    width: 100%;
+}
+#div-droite{
+    width: 100%;
+    padding: 0;
+}
+ }
+@media(max-width:992px){
+    #img-container img
+    {
+        width: 50%;
+    }
+}
+form{
+    width:70%;
+}
